@@ -1,0 +1,26 @@
+body{
+    font: italic 700 30px 楷体;
+    text-align: center;
+}
+p {
+    font-size: 30px;
+    color: red;
+    text-decoration: underline;
+}
+.size{
+
+    font-size: 30px;
+    text-indent: 2em;
+}
+#blue {
+    color: blue;
+}
+img{
+    height: 250px;
+    width: 250px;
+}
+a {
+    text-decoration: none;
+    color: rgba(0,0,0,0.1);
+    background-color: aquamarine;
+}

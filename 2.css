@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font: 13px Arial, sans-serif;
+    min-width: 768px; /
+}
+
+.wrap .top {
+    font-size: 0;
+    padding: 5px 24px 0;
+}
+
+.wrap .top .left-bar {
+    height: 60px;
+    line-height: 60px;
+}
+.wrap .top .right-bar {
+    float: right;
+    height: 60px;
+    line-height: 60px;
+}
+
+.wrap .top .right-bar .login-btn {
+    padding: 5px 10px;
+    margin-left: 10px;
+    text-align: center;
+    background-color: #4e6ef2;
+    color: #fff;
+    border-radius: 5px;
+}
+.wrap .top .right-bar .login-btn:hover {
+    background-color: #4662d9;
+}
+
+.wrap .top a {
+    font-size: 13px;
+    line-height: 23px;
+    color: #343434;
+    margin: 19px 24px 0 0;
+}
+
+.wrap .top a.login-btn {
+    margin-right: 0;
+}
+
+.wrap .top a:hover {
+    color: #315efb;
+}
+
+/* 搜索区 */
+.wrap .center {
+    width: 656px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.wrap .center .box {
+    width: 654px;
+}
+
+.wrap .center .logo {
+    width: 270px;
+    margin: 20px auto 0;
+}
+
+.wrap .center img {
+    width: 270px;
+    height: 129px;
+}
+
+.wrap .center .search {
+    padding: 10px 0 20px;
+    position: relative;
+}
+
+.wrap .center .search span {
+    position: absolute;
+    top: 22px;
+    right: 120px;
+    width: 24px; /*一个inline的元素绝对定位后会变为block元素，
+    所以此处的宽高是会生效的*/
+    height: 20px;
+    background: url(/iconlist.png) 0 47px;
+}
+
+.wrap .center .search span:hover {
+    background: url(/iconlist.png) 0 23px;
+    /*通过改变背景图片的定位，来决定显示长图片中的哪一部分
+    可称为CSS精灵图*/
+}
+
+.wrap .center form #key {
+    width: 550px;
+    height: 44px;
+    border-radius: 10px 0 0 10px;
+    border-color: #c4c7ce;
+    border-style: solid;
+    box-sizing: border-box;
+    border-right: none;
+    vertical-align: middle;/*解决按钮和输入框高度不一致的问题，
+    让两个元素在同一基线进行对齐，输入框和按钮都要加*/
+    outline: none;
+    padding: 12px 87px 12px 16px;
+}
+
+.wrap .center form #key:hover {
+    border-color: #a7aab5;
+}
+
+.wrap .center form #key:active {
+    border-color: #4e6ef2;
+}
+
+.wrap .center form input[type="button"] {
+    background-color: #4e6ef2;
+    color: white;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    height: 44px;
+    width: 104px;
+    vertical-align: middle;/*解决按钮和输入框高度不一致的问题，
+    让两个元素在同一基线进行对齐，输入框和按钮都要加*/
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.wrap .center form input[type="button"]:hover{
+    background-color: #4662d9;
+}
+
+/* 热搜区 */
+.wrap .hotkey {
+    padding-top: 20px;
+}
+
+.wrap .hotkey .title a {
+    color: #000;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.wrap .hotkey .title a:last-child {
+    color: #626675;
+    font-weight: normal;
+    font-size: 14px;
+    float: right;
+}
+
+.wrap .hotkey .title a:hover {
+    color: #00e;
+}
+
+.wrap .center .hotkey ul {
+    padding-top: 5px;
+    width: 325px;
+    display: inline-block;
+}
+
+.wrap .center .hotkey ul li{
+    height: 36px;
+    line-height: 36px;
+    font-size: 18px;
+    color: #9195a3;
+}
+
+.wrap .center .hotkey ul li a{
+    color: #222;
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+.wrap .center .hotkey ul li a:hover{
+    color: #00e;
+    text-decoration: underline;
+}
+.one{
+    color: #fe2d46!important;
+}
+.two{
+    color: #f60!important;
+}
+.three{
+    color: #faa90e!important;
+}
+
+.wrap .foot{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+}
+
+.wrap .foot a{
+    color: #bbb;
+    margin-right: 14px;
+    font-size: 12px;
+}
+.wrap .foot a:hover{
+    color: #222;
+}

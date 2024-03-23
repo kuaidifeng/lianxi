@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>百度一下，你就知道</title>
+    <link rel="stylesheet" href="./2.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="top">
+            <div class="right-bar">
+                <a href="#">设置</a>
+                <a class="login-btn" href="#">登录</a>
+            </div>
+            <div class="left-bar">
+                <a href="#">新闻</a>
+                <a href="#">hao123</a>
+                <a href="#">地图</a>
+                <a href="#">贴吧</a>
+                <a href="#">视频</a>
+                <a href="#">图片</a>
+                <a href="#">网盘</a>
+                <a href="#">更多</a>
+            </div>
+        </div>
+        <div class="center">
+            <div class="box logo">
+                <img src="Logo.png" alt="百度大logo">
+            </div>
+            <div class="box search">
+                <span></span>
+                <form action="https://www.baidu.com/s">
+                    <input type="text" name="wd" id="key"><input type="button" value="百度一下">
+                </form>
+            </div>
+            <div class="box hotkey">
+                <div class="title">
+                    <a href="#" class="baidu-hot-search">百度热搜 ></a>
+                    <a href="#">✌ 换一换 ✌</a>
+                </div>
+                <div class="list">
+                    <ul>
+                        <li class="one">1<a href="#">笔者究竟是何方神圣？</a></li>
+                        <li class="two">2<a href="#">自己动手开发一个百度首页</a></li>
+                        <li class="three">3<a href="#">笔者身高竟接近两米！</a></li>
+                    </ul>
+                    <ul>
+                        <li>4<a href="#">这个网页也能进行搜索？何妨一试</a></li>
+                        <li>5<a href="#">读完文章后，你会点赞吗？</a></li>
+                        <li>6<a href="#">快来打造属于自己的首页吧！</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="foot">
+            <p>
+                <a href="#">且将新火试新茶</a>
+                <a href="#">诗酒趁年华</a>
+                <a href="#">百度的网页做好了</a>
+                <a href="#">我们一起加油吧</a>
+                <a href="#">一起向未来</a>
+            </p>
+        </div>
+    </div>
+</body>
+<script>
+    document.getElementsByTagName("input")[1].addEventListener('click', function() {
+        let searchTxt = document.getElementsByTagName("input")[0].value;
+        window.location.href = "https://www.baidu.com/s?wd=" + searchTxt;
+    })
+</script>
+</html>

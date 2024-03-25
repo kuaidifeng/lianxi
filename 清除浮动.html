@@ -10,6 +10,7 @@
             width: 1200px;
             /* height: 300px; */
             background-color: pink;
+            overflow: hidden;
         }
         .left {
             width: 200px;
@@ -27,16 +28,15 @@
             height: 100px;
             background-color: brown;
         }
-        .clearfix::after {
+        /* .clearfix::after {
             clear: both;
             content: "";
             display: block;
-
-        }
+        } */
     </style>
 </head>
 <body>
-    <div class="top clearfix"> 
+    <div class="top"> 
         <div class="left"></div>
         <div class="right"></div>
         <!-- <div class="clearfix"></div> -->

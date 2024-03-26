@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        li {
+            list-style: none;
+        }
+        .servic {
+            margin: 100px auto;
+            width: 1190px;
+            height: 42px;
+            /* background-color: pink; */
+        }
+        .servic ul {
+            display: flex;
+        }
+        .servic li {
+            width: 297px;
+            height: 42px;
+            /* background-color: skyblue; */
+            padding-left: 40px;
+            display: flex;
+        }
+        .servic li h5 {
+            width: 36px;
+            height: 42px;
+            /* background-color: pink; */
+            background: url(./images/sprite.png) 0 -192px;
+            margin-right: 10px;
+        }
+
+        .servic li:nth-child(2) h5 {
+            background-position: -41px -192px;
+        }
+        .servic li p{
+            font-size: 18px;
+            color: #444;
+            font-weight: 700;
+            line-height: 42px ;
+        }
+    </style>
+</head>
+<body>
+    <div class="servic">
+        <ul>
+            <li>
+                <h5></h5>
+                <p>类品齐全，轻松购物</p>
+            </li>
+            <li>
+                <h5></h5>
+                <p>类品齐全，轻松购物</p>
+            </li>
+            <li>
+                <h5></h5>
+                <p>类品齐全，轻松购物</p>
+            </li>
+            <li>
+                <h5></h5>
+                <p>类品齐全，轻松购物</p>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

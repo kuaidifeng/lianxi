@@ -160,5 +160,60 @@
 }
 .help {
     height: 300px;
-    background-color: pink ;
+    /* background-color: pink ; */
+}
+.help {
+    display: flex;
+    justify-content:space-between;
+    height: 300px;
+    padding-top: 60px;
+
+}
+.help .left {
+    display: flex;
+}
+.help .left dl {
+    margin-right: 84px;
+}
+.help .left dl:last-child  {
+    margin-right: 0;
+}
+.help .left dt {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.help .left dd {
+    margin-bottom: 10px;   
+}
+.help .left a {
+    color: #969696;
+}
+.help .left .iconfont {
+    color: #5EB69C;
+}
+.help .right ul {
+    display: flex;
+}
+.help .right li:first-child {
+    margin-right: 55px;
+}
+.help .right .pic {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+}
+.help .right p {
+    color: #969696;
+    text-align: center;
+}
+.copyright {
+    text-align: center;
+}
+.copyright p {
+    margin-bottom: 10px;
+    color: #a1a1a1;
+}
+.copyright p a {
+    color: #a1a1a1;
+    margin:  0 10px;
 }

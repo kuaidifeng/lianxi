@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .box {
+            width: 200px;
+            height: 100px;
+            background-color: pink;
+
+            animation: change 5s linear;
+            animation: change 3s steps(3);
+            animation: change  1s 3s;
+            animation: change  1s infinite;
+            animation: change  1s infinite alternate;
+            animation: change  1s forwards;
+            animation: change  1s backwards;
+        }
+        @keyframes change {
+            from {
+                width: 200px;
+            }
+            to {
+                width: 800px;
+            }
+        } */
+        .box {
+            width: 200px;
+            height: 100px;
+            background-color: pink;
+            animation-name: change;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        .box:hover {
+            animation-play-state: paused;
+        }
+        @keyframes change {
+            0% {
+                width: 200px;
+            }
+            100% {
+                width: 800px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+.box {
+  width: 120px;
+  width: 50px;
+  width: 200px;
+  width: 5.33333333rem;
+  width: 2.66666667rem;
+}
+.father {
+  color: red;
+}
+.father .son {
+  width: 200px;
+}
+.father .son a {
+  color: green;
+}
+.father .son a:hover {
+  color: blue;
+}
+div {
+  color: blue;
+}
+p {
+  color: blue;
+}
+a {
+  color: blue;
+}

@@ -70,39 +70,43 @@
     //     i++
     // }
 
-    // let i = 1
-    // let sum = 0
-    // while (i <= 100) {
-    //     sum += i
-    //     i++
-    // }
-    // document.write(`1~100的累加和是${sum}`)
+    let i = 1
+    let sum = 0
+    while (i <= 100) {
+        sum += i
+        i++
+    }
+    document.write(`1~100的累加和是${sum}`)
 
-    // let money = 100
-    // while (true) {
-    //     let re = +prompt(`
-    //         请你选择操作：
-    //         1.存钱
-    //         2.取钱
-    //         3.查看余额
-    //         4.退出
-    //         `)
-    //         if (re === 4) {
-    //             break
-    //         }
-    //         switch (re) {
-    //             case 1:
-    //                 let cun = +prompt('请输入存款金额')
-    //                 money = money + cun
-    //             break
-    //             case 2:
-    //                 let qu = +prompt('请输入取款金额')
-    //                 money = money - qu
-    //             break
-    //             case 3:
-    //                 alert(`您的银行卡余额是${money}`)
-    //             break
-    //         }
+    let money = 100
+    while (true) {
+        let re = +prompt(`
+            请你选择操作：
+            1.存钱
+            2.取钱
+            3.查看余额
+            4.退出
+            `)
+            if (re === 4) {
+                break
+            }
+            switch (re) {
+                case 1:
+                    let cun = +prompt('请输入存款金额')
+                    money = money + cun
+                break
+                case 2:
+                    let qu = +prompt('请输入取款金额')
+                    money = money - qu
+                break
+                case 3:
+                    alert(`您的银行卡余额是${money}`)
+                break
+            }
+    }
+
+    // for (let i = 1; i <= 100; i++) {
+    //     document.write(`今年我${i}岁了<br>`)
     // }
 
     for (let i = 1; i <= 100; i++) {

@@ -12,15 +12,20 @@
     </style>
 </head>
 <body>
-    <div class="box"></div>
-    <ul>
+    <div class="box">这是一个盒子</div>
+    <!-- <ul>
         <li>ceshi1</li>
         <li>ceshi2</li>
         <li>ceshi3</li>
-    </ul>
+    </ul> -->
     <script>
-        const box = document.querySelector('div')
-        console.log(box)
+        // const box = document.querySelector('div')
+        // console.log(box)
+        const box = document.querySelector('.box')
+        // console.log(box.innerText)
+        // box.innerText = '<strong> 我要更换 </strong>'
+        console.log(box.innerHTML)
+        box.innerHTML = '<strong> 我要更换 </strong>'
     </script>
 </body>
 </html>

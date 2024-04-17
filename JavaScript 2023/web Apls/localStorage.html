@@ -8,18 +8,28 @@
 <body>
     <script>
          //本地存储
-         localStorage.setItem('uname','pink老师')
-        //获取存储
-        console.log(localStorage.getItem('uname'))
-        //删除存储 只删名字
-        // localStorage.removeItem('uname')
-        //改
-        localStorage.setItem('uname','red老师')
+        //  localStorage.setItem('uname','pink老师')
+        // //获取存储
+        // console.log(localStorage.getItem('uname'))
+        // //删除存储 只删名字
+        // // localStorage.removeItem('uname')
+        // //改
+        // localStorage.setItem('uname','red老师')
         
-        //只存字符串
-        localStorage.setItem('age',18)
-        console.log(localStorage.getItem('age'))
+        // //只存字符串
+        // localStorage.setItem('age',18)
+        // console.log(localStorage.getItem('age'))
 
+        const obj = {
+            uname :'pink',
+            gender:'女',
+            age :'18'
+        }
+        // 转JSON字符串
+        localStorage.setItem('obj',JSON.stringify(obj))
+        // console.log(typeof localStorage.getItem('obj'))
+        //把字符串转为对象
+        console.log(JSON.parse(localStorage.getItem('obj')))
     </script>
 </body>
 </html>
